@@ -70,7 +70,7 @@ class _HomeView extends StatelessView<HomeScreen, _HomeController> {
                   child: ListView.builder(
                       shrinkWrap: true,
                       itemCount: list.length,
-                      physics: ClampingScrollPhysics(),
+                      physics: const ClampingScrollPhysics(),
                       itemBuilder: (ctx, index) {
                         final item = list[index];
                         return ListTile(
